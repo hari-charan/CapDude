@@ -9,7 +9,8 @@ app = Flask(__name__)
 qrcode.make(socket.gethostbyname(socket.gethostname())+":5000/").show()
 app.config['last_path'] = ""
 
-shutil.rmtree('static/')
+if 'static' in os.listdir():
+	shutil.rmtree('static/')
 os.mkdir('static')
 
 @app.route('/')
