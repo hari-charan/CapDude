@@ -42,11 +42,7 @@ def controls():
 
 @app.route('/actions/<act>')
 def control(act):
-	keys = act.split('_')
-	if(keys[0] == 'hotkey'):
-		pgi.hotkey(*keys[1:])
-	else:
-		pgi.press(act)
+	pgi.hotkey(*act.split('_'))
 	return render_template('steer.html')
 
 
