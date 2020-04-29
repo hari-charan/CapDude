@@ -2,8 +2,7 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>CapDude</title>
-
+	<title>Stats</title>
 	<style type="text/css">
 		.heading
 		{
@@ -19,7 +18,7 @@
 		.container
 		{
 			display: grid;  
-		    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
 		    grid-template-rows: repeat(auto-fit, 50px);  
 		}
 
@@ -38,25 +37,25 @@
 			color: #ffffff;
 		}
 	</style>
-
 </head>
 <body>
-	<a href="/" class='heading'>
+	<a href="/"  class='heading'>
 	<p>CapDude</p>
 	</a>
-	<div class = 'container'>
-<!-- 		<table>
-			<tr>
-				<td> -->
-				<a href="/screenshot" class = "link">
-				Grab Shot 
-				</a>
-				<a href="/stats" class = "link">
-				Get Stats 
-				</a>
-				<a href="/steer" class = "link">
-				Steer 
-				</a>
+
+	<div class='container'>
+				<a href="/actions/space" class='link'>Click space </a>
+
+				<a href="/actions/up"  class='link'>Click up arrow</a>
+
+				<a href="/actions/down" class='link'>Click down arrow</a>
+
+				<a href="/actions/left" class='link'>Click left arrow</a>
+
+				<a href="/actions/right" class='link'>Click right arrow</a>
+
+				<a href="/actions/hotkey_alt_tab" class='link'>Click alt+tab</a>
 	</div>
+	
 </body>
 </html>
